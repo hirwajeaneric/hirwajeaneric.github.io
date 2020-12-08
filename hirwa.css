@@ -142,6 +142,7 @@ h2 {
   .button:hover {
     background-color: #555;
   }
+
 a:link, a:visited {
   background-color: green;
   color: white;
