@@ -142,13 +142,14 @@ html{
 section{
   padding: 100px 0;
 }
-.about, .services, .skills, .teams, .contact, footer {
+.about, .services, .skills, .teams, .contact, .graphic, .web,footer {
   font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content,
+.graphic .graphic-content{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -229,16 +230,18 @@ section .title::after{
 }
 
 /*Services section styling*/
-.services, .teams{
+.services, .teams, .web{
   color: #fff;
   background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.teams .title::before,
+.web .title::before{
   background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.teams .title::after,
+.web .title::after{
   background: #111;
   content: "What I do";
 }
@@ -429,6 +432,61 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
   background: orange!important;
+}
+
+/* Graphic design styling*/
+.graphic .title::after{
+  content: "My designs";
+}
+.graphic .graphic-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.graphic .graphic-content {
+  flex: auto;
+  align-items: center;
+}
+.graphic .graphic-content .gallery img{
+  width: 210px;
+  height: 210px;
+  padding: 10px;
+  /*filter: grayscale(100%);*/
+  transition: 1s;
+}
+.graphic .graphic-content .gallery img:hover{
+  /*filter: grayscale(0);*/
+  transform: scale(1.1);
+}
+.graphic .graphic-content .morebutton {
+  align-content: center;
+}
+.graphic .graphic-content .morebutton a{
+  display: inline-block;
+  background: orange;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid orange;
+  transition: all 0.3s ease;
+}
+.graphic .graphic-content .morebutton a:hover{
+  color: orange;
+  background: none;
+}
+
+
+/* Web design styling*/
+.web .title::after{
+  content: "My websites";
+}
+.web .web-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 /* Contact section styling*/
