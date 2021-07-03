@@ -394,7 +394,7 @@ p{
     left: 40px;
   }
   .toggle{
-    right: 40px;
+    right: 30px;
   }
   .sci{
     left: 40px;
@@ -473,5 +473,13 @@ p{
     padding-left: 25px;
     padding-right: 25px;
   }
-
+  .about p, .services p, .work p, .contact p, .copyright p{
+    font-size: 0.9em;
+  }
+  .toggle{
+    right: 20px;
+    top: 20px;
+    width: 45px;
+    height: 45px;
+  }
 }
