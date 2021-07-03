@@ -382,7 +382,6 @@ p{
   font-size: 16px;
 }
 
-/*This is styling for responsiveness*/
 @media (max-width: 991px) {
   .banner .imgSideBar{
     display: none;
@@ -435,6 +434,14 @@ p{
   .sidebar ul li a{
     font-size: 1.5em;
   }
+  .banner .contentBx p {
+    font-size: 1.0em;
+  }
+  .banner .contentBx h2 {
+    font-size: 2em;
+    color: #333;
+    line-height: 1em;
+}
 }
 
 @media (max-width: 500px){
@@ -445,4 +452,12 @@ p{
     width: 100%;
     margin: 10px 0;
   }
+  .banner .contentBx p{
+    font-size: 0.8em;
+  }
+  .banner .contentBx h2 {
+    font-size: 2em;
+    color: #333;
+    line-height: 1em;
+}
 }
