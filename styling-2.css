@@ -459,5 +459,19 @@ p{
     font-size: 2em;
     color: #333;
     line-height: 1em;
-}
+  }
+  .logoText {
+    visibility: hidden;
+  }
+  .banner .contentBx .sci {
+    bottom: 8px;
+  }
+  .banner .contentBx{
+    padding: 30px;
+  }
+  .about, .services, .work, .contact{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
 }
