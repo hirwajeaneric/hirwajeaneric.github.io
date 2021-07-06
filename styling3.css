@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 section{
   padding: 100px;
@@ -47,6 +48,10 @@ section{
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
+}
+.btn:hover{
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 header{
@@ -158,6 +163,10 @@ img{
   font-size: 20px;
   font-weight: 600;
 }
+
+
+/*These are stylings for works section*/
+
 .work .content {
   display: flex;
   justify-content: space-between;
@@ -166,12 +175,15 @@ img{
 .work .content .workBx{
   width: 25%;
   padding: 20px;
+  /*box-shadow: 2px 2px 4px lightgray;*/
 }
 .work .content .workBx img{
   max-width: 100%;
 }
 
+
 /*These are stylings for testimonials section*/
+
 .testimonial{
   background: #f7f7f7;
 }
@@ -288,4 +300,116 @@ img{
   color: #fff;
   text-align: center;
   padding: 10px;
+}
+
+/*Responsiveness*/
+@media (max-width: 991px) {
+  header,
+  header.sticky{
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  .menu{ /*Thess stylings imply that as we reach 991, the menu will become vertical*/
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  .menu.active{
+    left: 0;
+  }
+  header ul li a {
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle{
+    width: 40px;
+    height: 40px;
+    background: url(Images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  /*This is what happens when we click on the toggle button.*/
+  .toggle.active{
+    background: url(Images/menu-clicked.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  header.sticky .toggle{
+    filter: invert(1);
+  }
+  section{
+    padding: 100px 50px;
+  }
+  .banner{
+    padding: 150px 50px 100px;
+  }
+  .banner h2{
+    font-size: 1.5em;
+  }
+  .banner h3{
+    font-size: 1em;
+  }
+  .btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2{
+    font-size: 24px;
+  }
+  .contentBx h3{
+    font-size: 20px;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .w50{
+    margin-bottom: 20px;
+  }
+  .services .content .servicesBx{
+    margin: 10px;
+  }
+  .work .content .workBx{
+    width: 100%;
+    padding: 10px;
+  }
+  .testimonial .content .testimonialBx{
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 10px;
+    background: #2196f3;
+  }
+  .testimonial .content .testimonialBx h3{
+    margin-top: 20px;
+  }
+  .contactInfo{
+    margin: 20px 0;
+  }
+}
+@media (max-width: 600px) {
+  header,
+  header.sticky{
+    padding: 20px 20px;
+    z-index: 1000;
+  }
+  .banner {
+    padding: 150px 20px 100px;
+  }
+  section {
+    padding: 100px 20px;
+  }
 }
