@@ -131,7 +131,8 @@ img{
 }
 
 /*Stylings for services section*/
-.services{
+.services,
+.projects{
   background: #111;
 }
  .heading.white{
@@ -165,6 +166,132 @@ img{
 }
 
 
+/*These are stylings for the skills section*/
+.experience{
+  background: #fff;
+}
+.experience .content .contentBx{
+  width: calc(50% - 30px);
+}
+.experience .content .w50 .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.experience .content .w50 p{
+  text-align: justify;
+}
+.experience .content .w100 .bars{
+  margin-bottom: 15px;
+}
+.experience .content .w100 .info{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.experience .content .w100 span{
+  font-weight: 500;
+  font-size: 18px;
+}
+.experience .content .w100 .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.experience .content .w100 .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  background: #2196f3;
+}
+.experience .content .w100 .html::before{
+  width: 80%;
+}
+.experience .content .w100 .css::before{
+  width: 70%;
+}
+.experience .content .w100 .js::before{
+  width: 40%;
+}
+.experience .content .w100 .java::before{
+  width: 50%;
+}
+.experience .content .w100 .php::before{
+  width: 30%;
+}
+.experience .content .w100 .mysql::before{
+  width: 85%;
+}
+.experience .content .w100 .wp::before{
+  width: 70%;
+}
+.experience .content .w100 .ps::before{
+  width: 70%;
+}
+.experience .content .w100 .ai::before{
+  width: 70%;
+}
+.experience .content .w100 .id::before{
+  width: 50%;
+}
+.experience .content .w100 .c4d::before{
+  width: 30%;
+}
+.experience .content .w100 .ccreat::before{
+  width: 80%;
+}
+
+
+/* These are stylings for projects section*/
+
+.projects .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.projects .content .projectsBx{
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.projects .content .projectsBx:hover{
+  background: #2196f3;
+}
+.projects .content .projectsBx img{
+ max-width: 98%;
+ /*filter: invert(1);*/
+}
+.projects .content .projectsBx h2{
+ font-size: 20px;
+ font-weight: 600;
+}
+.projects .content .projectsBx .heading a{
+  background: #111;
+  color: white;
+  border-radius: 4px;
+  border: 2px solid #2196f3;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.projects .content .projectsBx .heading a:hover{
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
 /*These are stylings for works section*/
 
 .work .content {
@@ -179,6 +306,10 @@ img{
 }
 .work .content .workBx img{
   max-width: 100%;
+}
+.work .content .workBx img:hover{
+  transform: scale(1.1);
+  transition: 1s ease;
 }
 
 
@@ -314,7 +445,7 @@ img{
     top: 75px;
     left: -100%;
     display: block;
-    padding: 45px 50px;
+    padding: 50px 50px;
     text-align: center;
     width: 100%;
     height: 100vh;
@@ -386,6 +517,9 @@ img{
   .work .content .workBx{
     width: 100%;
     padding: 10px;
+  }
+  .experience .content .contentBx{
+    width: calc(100%);
   }
   .testimonial .content .testimonialBx{
     max-width: calc(100% - 20px);
