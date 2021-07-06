@@ -533,6 +533,11 @@ img{
   .contactInfo{
     margin: 20px 0;
   }
+  .experience .content .w50 .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 12px;
+    }
 }
 @media (max-width: 600px) {
   header,
