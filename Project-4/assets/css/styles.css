@@ -71,7 +71,8 @@ a{
   text-decoration: none;
 }
 img{
-  max-width: 100%;
+  max-width: 80%;
+  margin-left: 40px;
   height: auto;
   display: block;
 }
