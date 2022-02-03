@@ -41,7 +41,7 @@ header {
 .services .aService:hover {
     background-color: rgb(192, 233, 255);
     margin: 0 0 30px 0;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.3;
 }
 
