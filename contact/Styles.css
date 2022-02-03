@@ -78,7 +78,7 @@ body {
     background-color: #3399ff;
     border: none;
     color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
@@ -208,10 +208,35 @@ footer .footer-part .myImage {
         padding: 100px 30px 60px;
     }
 
+    .introduction {
+        height: 1100px;
+    }
+
+    .introduction h2 {
+        margin-top: -400px;
+    }
+
     .introduction p {
         width: 80%;
     }
 
+    /*
+    .contacts .right-part .contact-item {
+        padding-right: 20px;
+    }*/
     
+    .contacts {
+        width: 90%;
+    }
+
+    .contacts .left-part,
+    .contacts .right-part {
+        width: 100%;
+        padding: 20px 15px 30px 15px;
+    }
+
+    .tagline {
+        width: 100%;
+    }
 
 }
