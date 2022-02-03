@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Programmer, Designer, Web, Web Developer, Software Engineer, Graphic Designer, Projects, Software">
+    <title>Hirwa J Eric | Contact me</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='Styles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Assets/Css/main.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="l-header">
+        <a href="hirwajeaneric.github.io" class="logo">HIRWA Jean Eric</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li class="nav__item"><a href="hirwajeaneric.github.io" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="../portfolio/" class="nav__link">Portfolio</a></li>
+            <li class="nav__item"><a href="../blog/" class="nav__link">Blog</a></li>
+            <li class="nav__item"><a href="../services/" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="../contact/" id="get-intouch" class="nav__link active">Get in touch</a></li>
+        </ul>
+    </header>
+
+    <!--Banner-->
+    <div class="introduction">
+        <center class="banner">
+            <h2>Get in touch</h2>
+            <p class="tagline">Let's talk about your project, website, or design. Do you want to hire me? I would also love some greetings!</p>
+        </center>
+    </div>
+
+    <!--CONTACT SECTION-->
+    <div class="contacts">
+        <!--Left part-->
+        <div class="left-part">
+            <h2 class="head-message">Contact Me</h2>
+            <form action="">
+                <label for="firstName">Your first name</label>
+                <input type="text" name="first-name" id="first-name">
+                <br>
+                <label for="lastName">Your last name</label>
+                <input type="text" name="last-name" id="last-name">
+                <br>
+                <label for="email">Your email address</label>
+                <input type="email" name="email-address" id="email">
+                <br>
+                <label for="message">Your Message</label>
+                <textarea type="text" name="your-message" id="message"></textarea>
+                <br>
+                
+                <input type="submit" value="SEND MESSAGE" name="send" id="submit-button">
+            </form>
+        </div>
+
+        <!--Right part-->
+        <div class="right-part">
+            <h2 class="contact-address">Contact Info & Address</h2>
+            <div class="email-address item">
+                <h5>Email Address</h5>
+                <p>hirwajeaneric25@gmail.com</p>
+            </div>
+            <div class="linkedin item">
+                <h5>LinkedIn</h5>
+                <p>hirwajeaneric234312</p>
+            </div>
+            <div class="instagram item">
+                <h5>Instagram</h5>
+                <p>hirwa_jean_eric</p>
+            </div>
+            <div class="facebook item">
+                <h5>Facebook</h5>
+                <p>hirwajeaneric25@gmail.com</p>
+            </div>
+            <div class="Location item">
+                <h5>Location</h5>
+                <p>Kigali, Rwanda</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-part">
+            <img class="myImage" src="../Assets/Img/HirwaJeanEric.1.0.5.png" alt="Hirwa Jean Eric">
+            <blockquote>"Birth and Death are a certainity for all that live. But everything in between is our choice."</blockquote>
+            <div class="social-medias">
+                <a href="#" class="linkedin">O</a>
+                <a href="#" class="instagram">O</a>
+                <a href="#" class="whatsapp">O</a>
+                <a href="hirwajeaneric25@gmail.com" class="gmail">O</a>
+                <a href="#" class="pinterest">O</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 Hirwa Jean Eric</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+          var header = document.querySelector('header');
+          header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+          var menuToggle = document.querySelector('.toggle');
+          var menu = document.querySelector('.menu');
+          menuToggle.classList.toggle('active');
+          menu.classList.toggle('active')
+        }
+      </script>
+      <script src='main.js'></script>
+</body>
+</html>

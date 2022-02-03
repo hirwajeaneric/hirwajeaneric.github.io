@@ -1,0 +1,54 @@
+
+/*BLOG STYLES*/
+/*These styles belong to the style page.*/
+* {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+header {
+    background-color: black;
+    padding: 20px 90px;
+}
+
+.callToAction {
+    margin: 65px auto 0 auto;
+    background: linear-gradient(to bottom, #003366 0%, #66ff99 100%);
+    color: white;
+    justify-content: space-around;
+}
+
+
+.callToAction h3 {
+    font-size: 300%;
+    text-align: center;
+}
+
+
+/*
+@media (max-width: 991px){
+
+}
+
+@media (max-width: 799px){
+
+}
+*/
+@media (max-width: 600px){
+    
+    /*Menu*/
+    .menu{ 
+        top: 75px;
+    }
+
+    header,
+    header.sticky{
+      padding: 20px 32px;
+      z-index: 1000;
+    }
+
+    .callToAction h3 {
+        font-size: 200%;
+        text-align: center;
+    }
+}

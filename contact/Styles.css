@@ -1,0 +1,217 @@
+/*CONTACT STYLES*/
+* {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+body {
+    background-color: #3399ff;
+}
+
+.introduction {    
+    background: linear-gradient(to bottom, #000026 0%, #3399ff 100%);
+    height: 1000px;
+}
+
+.introduction h2 {
+    margin-top: -350px;
+    font-size: 270%;
+}
+
+.introduction p {
+    font-size: 130% !important;
+    width: 70%;
+    max-width: 800px;
+}
+
+/*These styles belong to the contact page.*/
+.contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 999;
+    margin: -600px auto 0;
+}
+
+.contacts .left-part,
+.contacts .right-part {
+    width: 50%;
+}
+
+/*Left part alone*/
+.contacts .left-part {
+    padding: 40px;
+}
+
+.contacts .left-part input {
+    width: 100%;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.contacts .left-part textarea {
+    width: 100%;
+    margin: 0 auto 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.contacts .left-part label {
+    font-size: 90%;
+}
+
+.contacts .left-part #submit-button {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    height: 30px;
+    width: 40%;
+}
+
+.contacts .left-part #submit-button:hover {
+    background-color: #3399ff;
+    border: none;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/*Right part alone*/
+.contacts .right-part {
+    background-color: rgb(0, 29, 60);
+    color: white;
+    padding: 40px;
+}
+
+.contacts .right-part h2,
+.contacts .left-part h2 {
+    margin: 0 0 30px;
+}
+
+.contacts .right-part .item {
+    margin: 0 0 20px;
+}
+
+/*Additions to the footer*/
+footer {
+    background-color: white;
+}
+
+footer .footer-part .myImage {
+    padding-top: 100px;
+}
+
+
+@media (max-width: 991px){    
+    /*These styles belong to the contact page.*/
+    .contacts {
+        width: 85%;
+        margin: -650px auto 0;
+    }
+    
+    .contacts .left-part,
+    .contacts .right-part {
+        width: 50%;
+    }
+    
+    /*Left part alone*/
+    .contacts .left-part {
+        padding: 25px;
+    }
+    
+    .contacts .left-part #submit-button {
+        font-weight: 500;
+        width: 50%;
+    }
+    
+    .contacts .left-part #submit-button:hover {
+        background-color: #3399ff;
+        border: none;
+        color: white;
+    }
+    
+    /*Right part alone*/
+    .contacts .right-part {
+        padding: 25px;
+    }
+    
+    /*Additions to the footer*/
+    footer .footer-part .myImage {
+        padding-top: 70px;
+    }
+    
+}
+
+@media (max-width: 799px){      
+    .introduction h2 {
+        font-size: 230%;
+    }
+    
+    .introduction p {
+        font-size: 110% !important;
+    }
+    
+    /*These styles belong to the contact page.*/
+    .contacts {
+        width: 83%;
+    }
+    
+    .contacts .left-part,
+    .contacts .right-part {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    
+    .contacts .left-part h2,
+    .contacts .right-part h2 {
+        text-align: center;
+    }
+    
+    .contacts .left-part #submit-button {
+        font-weight: 600;
+        width: 100%;
+        height: 40px;
+    }
+    
+    /*Right part alone*/
+    .contacts .right-part {
+        padding: 25px;
+    }
+
+    /*Additions to the footer*/
+    footer .footer-part .myImage {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 600px){
+
+    /*Menu*/
+    .menu{ 
+        top: 75px;
+    }
+
+    header,
+    header.sticky{
+      padding: 20px 32px;
+      z-index: 1000;
+    }
+
+    /*Other sections*/
+    .section {
+        padding: 100px 30px 60px;
+    }
+
+    .introduction p {
+        width: 80%;
+    }
+
+    
+
+}
