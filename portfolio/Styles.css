@@ -1,0 +1,47 @@
+
+/*PORTFOLIO STYLES*/
+/*These styles belong to the portfolio page.*/
+* {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+header {
+    background-color: black;
+    padding: 20px 90px;
+}
+
+.project h2 {
+    padding: 150px 0 0 0;
+    font-size: 250%;
+} 
+
+@media (max-width: 991px){
+
+}
+
+@media (max-width: 799px){
+    .project h2 {
+        padding: 140px 0 20px 0;
+        font-size: 200%;
+    } 
+}
+
+@media (max-width: 600px){
+    /*Menu*/
+    .menu{ 
+        top: 75px;
+    }
+
+    header,
+    header.sticky{
+      padding: 20px 32px;
+      z-index: 1000;
+    }
+    
+    
+    .project h2 {
+        padding: 100px 0 0 0;
+        font-size: 200%;
+    } 
+}

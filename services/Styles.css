@@ -1,0 +1,171 @@
+/*SERVICES STYLES*/
+* {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+header {
+    background-color: black;
+    padding: 20px 90px;
+}
+
+.section {
+    padding: 100px 100px 90px;
+}
+
+/*These styles belong to the service page.*/
+.services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.services h1 {
+    margin: 40px auto 60px;
+    font-size: 300%;
+} 
+
+.services .aService {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    margin: 0 0 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.services .aService:hover {
+    background-color: rgb(192, 233, 255);
+    margin: 0 0 30px 0;
+    transform: scale(1.1);
+    transition: 0.3;
+}
+
+.services .aService .leftside-content {
+    width: 24%;
+    border-radius: 10px 0 0 10px;
+    background-image: url("../Assets/Img/friendship-small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services .aService .rightside-content {
+    width: 72%;
+    padding: 40px 0;
+}
+
+.services .aService .rightside-content .description {
+    margin: 15px 20px 25px 0;
+}
+
+.services .aService .rightside-content .hireMeButton {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    padding: 10px 20px;
+    margin: 20px 0 20px
+}
+
+.services .aService .rightside-content .hireMeButton:hover {
+    color: white;
+    background-color: #003e7b;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 991px){
+    .section {
+        padding: 100px 50px 60px;
+    }
+
+    .services h1 {
+        margin: 40px auto 60px;
+        font-size: 250%;
+    } 
+
+    .services .aService .leftside-content {
+        width: 35%;
+    }
+    
+    
+    .services .aService .rightside-content {
+        width: 60%;
+    }
+
+    .services .aService .rightside-content .description {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 799px){
+    .section {
+        padding: 100px 50px 60px;
+    }
+}
+
+@media (max-width: 600px){
+
+    /*Menu*/
+    .menu{ 
+        top: 75px;
+    }
+
+    header,
+    header.sticky{
+      padding: 20px 32px;
+      z-index: 1000;
+    }
+
+    /*Other sections*/
+    .section {
+        padding: 100px 30px 60px;
+    }
+
+    .services .aService {
+        margin: 0 auto 20px auto;
+    }
+
+    .services .aService .rightside-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .services .aService .leftside-content {
+        width: 100%;
+        background-image: url("../Assets/Img/friendship-small.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .services .aService .rightside-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .services .aService .rightside-content .description {
+        font-size: 90%;
+    }
+
+    .services .aService .rightside-content .hireMeButton {
+        font-weight: 500;
+        font-size:90%;
+        padding: 8px 16px;
+    }
+
+    .forPhones {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        background-image: url("../Assets/Img/friendship-small.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        margin-bottom: 20px;
+
+    }
+}
