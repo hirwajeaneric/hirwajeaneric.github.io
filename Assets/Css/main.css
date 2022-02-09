@@ -14,6 +14,10 @@
     padding: 0 70px 90px;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 /*NAVIGATION*/
 /*Styling for the header section (Navigation bar) .*/
 header{
@@ -266,17 +270,59 @@ header.sticky #get-intouch:hover {
     width: 25%;
 }
 
+/*
+.project .overview .part1 a {
+    padding-top: 20px;
+}*/
+
 .project .overview img {
     width: 100%;
-    padding: 20px 0;
+    height: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project .big-scale {
     width: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project .big-scale img {
     width: 100%;
+}
+/*
+.slideshow-container {
+    z-index: 1000;   
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slideshow-container .mySlides {
+    display: none;
+}
+
+.slideshow-container .slideImage {
+    vertical-align: middle;
+}
+*/
+
+/*Animation*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 .project .overview a {
@@ -531,11 +577,22 @@ footer .footer-part blockquote {
     font-size: 90%;
 }
 
+/*
+footer .footer-part .social-medias {
+    background-color: gray;
+}*/
+
 footer .footer-part .social-medias a {
     text-decoration: none;
     padding: 0px 18px;
     cursor: pointer;
 }
+
+footer .footer-part .social-medias a ion-icon {
+    color: black;
+    width: 20px;
+    font-size: 500%;
+} 
 
 footer .copyright {
     margin: 100px 0 0 0;
