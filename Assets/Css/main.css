@@ -14,6 +14,10 @@
     padding: 0 70px 90px;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 /*NAVIGATION*/
 /*Styling for the header section (Navigation bar) .*/
 header{
@@ -268,11 +272,14 @@ header.sticky #get-intouch:hover {
 
 .project .overview img {
     width: 100%;
+    height: 66.66%;
     padding: 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project .big-scale {
     width: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project .big-scale img {
@@ -531,11 +538,22 @@ footer .footer-part blockquote {
     font-size: 90%;
 }
 
+/*
+footer .footer-part .social-medias {
+    background-color: gray;
+}*/
+
 footer .footer-part .social-medias a {
     text-decoration: none;
     padding: 0px 18px;
     cursor: pointer;
 }
+
+footer .footer-part .social-medias a ion-icon {
+    color: black;
+    width: 20px;
+    font-size: 500%;
+} 
 
 footer .copyright {
     margin: 100px 0 0 0;
