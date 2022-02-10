@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+section{
+  padding: 100px;
+
+/*Styling for the hero image and banner*/
+}
+.banner{
+  position: relative;
+  min-height: 100vh;
+  background: url(Images/HirwaJEric.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner h2{
+  font-size: 3em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.banner h2 span{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.banner h3{
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 500;
+}
+.btn{
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.btn:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/*Styling for the header section.*/
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+header.sticky .logo{
+  color: #111;
+}
+header ul{
+  position: relative;
+  display: flex;
+}
+header ul li{
+  position: relative;
+  list-style: none;
+}
+header ul li a{
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+header.sticky ul li a{
+  color: #111;
+}
+
+/*Styling for the about section*/
+.heading{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+.heading h2{
+  font-weight: 600;
+  font-size: 30px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.contentBx{
+  padding-right: 30px;
+}
+.contentBx h3{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.w50{
+  min-width: 50%;
+}
+img{
+  max-width: 100%;
+}
+
+/*Stylings for services section*/
+.services,
+.projects{
+  background: #111;
+}
+ .heading.white{
+   color: #fff;
+ }
+ .services .content{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+ }
+ .services .content .servicesBx{
+   padding: 40px 20px;
+   background: #222;
+   color: #fff;
+   max-width: 340px;
+   margin: 20px;
+   text-align: center;
+   transition: 0.5s;
+ }
+ .services .content .servicesBx:hover{
+   background: #2196f3;
+ }
+.services .content .servicesBx img{
+  max-width: 80px;
+  filter: invert(1);
+}
+.services .content .servicesBx h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/*These are stylings for the skills section*/
+.experience{
+  background: #fff;
+}
+.experience .content .contentBx{
+  width: calc(50% - 30px);
+}
+.experience .content .w50 .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.experience .content .w50 p{
+  text-align: justify;
+}
+.experience .content .w100 .bars{
+  margin-bottom: 15px;
+}
+.experience .content .w100 .info{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.experience .content .w100 span{
+  font-weight: 500;
+  font-size: 18px;
+}
+.experience .content .w100 .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.experience .content .w100 .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  background: #2196f3;
+}
+.experience .content .w100 .html::before{
+  width: 80%;
+}
+.experience .content .w100 .css::before{
+  width: 70%;
+}
+.experience .content .w100 .js::before{
+  width: 40%;
+}
+.experience .content .w100 .java::before{
+  width: 50%;
+}
+.experience .content .w100 .php::before{
+  width: 30%;
+}
+.experience .content .w100 .mysql::before{
+  width: 85%;
+}
+.experience .content .w100 .wp::before{
+  width: 70%;
+}
+.experience .content .w100 .ps::before{
+  width: 70%;
+}
+.experience .content .w100 .ai::before{
+  width: 70%;
+}
+.experience .content .w100 .id::before{
+  width: 50%;
+}
+.experience .content .w100 .c4d::before{
+  width: 30%;
+}
+.experience .content .w100 .ccreat::before{
+  width: 80%;
+}
+
+
+/* These are stylings for projects section*/
+
+.projects .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.projects .content .projectsBx{
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.projects .content .projectsBx:hover{
+  background: #2196f3;
+}
+.projects .content .projectsBx img{
+ max-width: 98%;
+ /*filter: invert(1);*/
+}
+.projects .content .projectsBx h2{
+ font-size: 20px;
+ font-weight: 600;
+}
+.projects .content .projectsBx .heading a{
+  background: #111;
+  color: white;
+  border-radius: 4px;
+  border: 2px solid #2196f3;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.projects .content .projectsBx .heading a:hover{
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
+/*These are stylings for works section*/
+
+.work .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work .content .workBx{
+  width: 25%;
+  padding: 20px;
+  /*box-shadow: 2px 2px 4px lightgray;*/
+}
+.work .content .workBx img{
+  max-width: 100%;
+}
+.work .content .workBx img:hover{
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+
+/*These are stylings for testimonials section*/
+
+.testimonial{
+  background: #f7f7f7;
+}
+.testimonial .content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.testimonial .content .testimonialBx{
+  max-width: calc(50% - 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  background: #2196f3;
+}
+.testimonial .content .testimonialBx p{
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
+}
+.testimonial .content .testimonialBx h3{
+  margin-top: 40px;
+  text-align: end;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1em;
+}
+.testimonial .content .testimonialBx h3 span{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*Stlyings for the contact form.*/
+.contact{
+  background: #111;
+}
+.formBx{
+  min-width: 60%;
+}
+.formBx form{
+  display: flex;
+  flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea{
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: #222;
+  border: none;
+  outline: none;
+  color: #fff;
+  resize: none;
+}
+.formBx form textarea{
+  min-height: 200px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder{
+  color: #999;
+}
+.formBx form input[type="submit"]{
+  max-width: 100px;
+  background: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contactInfo{
+  min-width: 40%;
+}
+.contactInfoBx{
+  position: relative;
+}
+.contactInfoBx .box{
+  position: relative;
+  padding: 20px;
+  display: flex;
+}
+.contactInfoBx .box .icon{
+  min-width: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.contactInfoBx .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contactInfoBx .box .text h3{
+  font-weight: 500;
+  color: #2196f3;
+  margin-bottom: 0;
+}
+
+/*Styling for all rights reserved.*/
+.copyright{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/*Responsiveness*/
+@media (max-width: 991px) {
+  header,
+  header.sticky{
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  .menu{ /*Thess stylings imply that as we reach 991, the menu will become vertical*/
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 50px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  .menu.active{
+    left: 0;
+  }
+  header ul li a {
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle{
+    width: 40px;
+    height: 40px;
+    background: url(Images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  /*This is what happens when we click on the toggle button.
+  Buttons are exchanged*/
+  .toggle.active{
+    background: url(Images/menu-clicked.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  header.sticky .toggle{
+    filter: invert(1);
+  }
+  section{
+    padding: 100px 50px;
+  }
+  .banner{
+    padding: 150px 50px 100px;
+  }
+  .banner h2{
+    font-size: 1.5em;
+  }
+  .banner h3{
+    font-size: 1em;
+  }
+  .btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2{
+    font-size: 24px;
+  }
+  .contentBx h3{
+    font-size: 20px;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .w50{
+    margin-bottom: 20px;
+  }
+  .services .content .servicesBx{
+    margin: 10px;
+  }
+  .work .content .workBx{
+    width: 100%;
+    padding: 10px;
+  }
+  .experience .content .contentBx{
+    width: calc(100%);
+  }
+  .testimonial .content .testimonialBx{
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 10px;
+    background: #2196f3;
+  }
+  .testimonial .content .testimonialBx h3{
+    margin-top: 20px;
+  }
+  .contactInfo{
+    margin: 20px 0;
+  }
+  .experience .content .w50 .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+  .btn {
+      margin-top: 20px;
+      padding: 10px 25px;
+      font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+  header,
+  header.sticky{
+    padding: 20px 20px;
+    z-index: 1000;
+  }
+  .banner {
+    padding: 150px 20px 100px;
+  }
+  section {
+    padding: 100px 20px;
+  }
+  .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+}
