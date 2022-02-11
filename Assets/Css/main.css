@@ -276,25 +276,11 @@ h1, .callToAction h3 {
     width: 25%;
 }
 
-/*
-.project .overview img {
-    width: 100%;
-    position: relative;
-    height: auto;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}*/
-
 .project .big-scale {
     width: 65%;
     height: 460px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-/*
-.project .big-scale .projectNo {
-    width: 100%;
-} */
 
 .project .aProject .six {
     background-image: url("../Img/INTERCONTINENTAL-Software-Concept.jpg");
@@ -335,22 +321,7 @@ h1, .callToAction h3 {
 .project .big-scale img {
     width: 100%;
 }
-/*
-.slideshow-container {
-    z-index: 1000;   
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-}
 
-.slideshow-container .mySlides {
-    display: none;
-}
-
-.slideshow-container .slideImage {
-    vertical-align: middle;
-}
-*/
 
 /*Animation*/
 .fade {
@@ -989,13 +960,6 @@ footer .copyright p {
       z-index: 1000;
     }
 
-    /*
-    .toggle{
-        width: 30px;
-        height: 30px;
-      }
-      */
-
     h1, .callToAction h3 {
         font-size: 150% !important;
     }
@@ -1139,7 +1103,5 @@ footer .copyright p {
         color: white;
         font-size: 80%;
     }
-
-
   }
   
