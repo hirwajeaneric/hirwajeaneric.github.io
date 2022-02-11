@@ -303,31 +303,31 @@ h1, .callToAction h3 {
 }
 
 .project .aProject .five {
-    background-image: url("../Img/JoePhotogray.png");
+    background-image: url("../Img/JoePhotogray.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .project .aProject .four {
-    background-image: url("../Img/PersonalPortfolio1.png");
+    background-image: url("../Img/PersonalPortfolio1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .project .aProject .three {
-    background-image: url("../Img/MinerveDesigner.png");
+    background-image: url("../Img/MinerveDesigner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .project .aProject .two {
-    background-image: url("../Img/PersonalPortfolio2.png");
+    background-image: url("../Img/PersonalPortfolio2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .project .aProject .one {
-    background-image: url("../Img/PersonalPortfolio3.png");
+    background-image: url("../Img/PersonalPortfolio3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
