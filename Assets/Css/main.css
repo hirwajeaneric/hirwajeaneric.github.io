@@ -295,7 +295,7 @@ h1, .callToAction h3 {
 }
 
 .project .aProject .four {
-    background-image: url("../Img/PersonalPortfolio1.jpg");
+    background-image: url("../Img/PersonalPortfolio2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -307,13 +307,13 @@ h1, .callToAction h3 {
 }
 
 .project .aProject .two {
-    background-image: url("../Img/PersonalPortfolio2.jpg");
+    background-image: url("../Img/PersonalPortfolio3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .project .aProject .one {
-    background-image: url("../Img/PersonalPortfolio3.jpg");
+    background-image: url("../Img/PersonalPortfolio1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
