@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Poppins', sans-serif; 
+    font-size: 98%;
     scroll-behavior: smooth;
     transition: 0.5s;
 }
@@ -158,6 +159,10 @@ header.sticky #get-intouch:hover {
     max-width: 800px;
 }
 
+h1, .callToAction h3 {
+    font-size: 250% !important;
+}
+
 .service h1 {
     padding: 80px 0px 60px;
     margin-right: auto;
@@ -254,8 +259,9 @@ header.sticky #get-intouch:hover {
     margin-left: auto;
 }
 
-.project h2 {
+.project h1 {
     margin: 20px auto 20px auto;
+    text-align: center;
 }
 
 .project .aProject {
@@ -270,43 +276,52 @@ header.sticky #get-intouch:hover {
     width: 25%;
 }
 
-/*
-.project .overview .part1 a {
-    padding-top: 20px;
-}*/
-
-.project .overview img {
-    width: 100%;
-    position: relative;
-    height: auto;
-    margin-top: 10px;
+.project .big-scale {
+    width: 65%;
+    height: 460px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.project .big-scale {
-    width: 65%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.project .aProject .six {
+    background-image: url("../Img/INTERCONTINENTAL-Software-Concept.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project .aProject .five {
+    background-image: url("../Img/JoePhotogray.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project .aProject .four {
+    background-image: url("../Img/PersonalPortfolio1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project .aProject .three {
+    background-image: url("../Img/MinerveDesigner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project .aProject .two {
+    background-image: url("../Img/PersonalPortfolio2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project .aProject .one {
+    background-image: url("../Img/PersonalPortfolio3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .project .big-scale img {
     width: 100%;
 }
-/*
-.slideshow-container {
-    z-index: 1000;   
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-}
 
-.slideshow-container .mySlides {
-    display: none;
-}
-
-.slideshow-container .slideImage {
-    vertical-align: middle;
-}
-*/
 
 /*Animation*/
 .fade {
@@ -379,7 +394,7 @@ header.sticky #get-intouch:hover {
     margin: 0 auto 0 auto;
 }
 
-.startups h2 {
+.startups h1 {
     margin: 40px auto 20px auto;
 }
 
@@ -445,7 +460,7 @@ header.sticky #get-intouch:hover {
     margin: 0 auto 40px auto;
 }
 
-.testimonials h2 {
+.testimonials h1 {
     margin: 40px auto 100px auto;
 }
 
@@ -529,7 +544,8 @@ header.sticky #get-intouch:hover {
 
 .callToAction .callMessage {
     text-align: center;
-    margin: 0 auto 0 auto;    
+    margin: 0 auto 0 auto;
+    width: 50%;    
 }
 
 .callToAction a {
@@ -820,7 +836,7 @@ footer .copyright p {
 @media (max-width: 799px) {
     /*ALL SECTIONS - Reducing the padding*/
     .section {
-        padding: 0 5 0px 60px;
+        padding: 0 40px 0px 40px;
     }
 
     /*SERVICES*/
@@ -944,6 +960,15 @@ footer .copyright p {
       z-index: 1000;
     }
 
+    h1, .callToAction h3 {
+        font-size: 150% !important;
+    }
+
+    .section {
+        padding: 0;
+    }
+
+    
     .menu{ /*Thess stylings imply that as we reach 991, the menu will become vertical*/
         position: fixed;
         top: 60px;
@@ -982,14 +1007,26 @@ footer .copyright p {
      
     
     /*PROJECTS*/    
+    
+    .project .overview {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .project .overview .part1 a {
         font-size: 110%;
     }
 
+    .project .overview .part1 img {
+        display: none;
+    }
+
     .project .overview .project-description {
         width: 100%;
-        padding: 20px;
         font-size: 90%;
+        padding: 0;
+        margin-bottom: 30px;
     }
         
     .project .overview a {
@@ -1030,7 +1067,6 @@ footer .copyright p {
     .startup-cards .aStartup #inDevelopment-notice {
         font-size: 70%;
     }
-    */
     
     
     /*TESTIMONIALS*/
@@ -1067,7 +1103,5 @@ footer .copyright p {
         color: white;
         font-size: 80%;
     }
-
-
   }
   
