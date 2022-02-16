@@ -247,8 +247,7 @@ h1, .callToAction h3 {
 /*PROJECTS*/
 .project {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     max-width: 1300px;
 }
 
